@@ -13,7 +13,7 @@ import {
   Img
 } from './InforSectionElement';
 
-function InforSection({
+function InfoSection({
   primary,
   lightBg,
   topLine,
@@ -38,7 +38,7 @@ function InforSection({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to='/sign-up'>
+                <Link to='/sign-UP'>
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>
@@ -57,4 +57,4 @@ function InforSection({
   );
 }
 
-export default InforSection;
+export default InfoSection;

@@ -55,13 +55,18 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/services' onClick={closeMobileMenu}>
-                  Services
+                <NavLinks to='/nf' onClick={closeMobileMenu}>
+                  News feed
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to='/products' onClick={closeMobileMenu}>
-                  Products
+                <NavLinks to='/request' onClick={closeMobileMenu}>
+                  Request
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to='/setting' onClick={closeMobileMenu}>
+                  Setting
                 </NavLinks>
               </NavItem>
               <NavItemBtn>
@@ -78,7 +83,7 @@ function Navbar() {
                 )}
                 {button ? (
                   <NavBtnLink to='/sign-UP'>
-                    <Button primary>SIGN UP</Button>
+                    <Button primary>SIGN IN</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to='/sign-UP'>

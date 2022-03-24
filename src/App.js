@@ -1,28 +1,22 @@
 import React from 'react';
-import GlobalStyle from './globalStyles';
-// import Footer from './components/Footer/Footer'
-import {Navbar, Footer} from './components'
-// import Services from './pages/Services/Services';
-// import Products from './pages/Products/Products';
-// import SignUp from './pages/SignUp/SignUp';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import ScrollToTop from './components/ScrollToTop';
-// import { Navbar, Footer } from './components';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages/Homepage/Home';
+import Request from './pages/Request/Request'
+import SignIn from './pages/Login/Login'
+import SignUp from './pages/SignUp'
 
 function App() {
   return (
-    <Router>
-      <GlobalStyle />
-      {/* <ScrollToTop /> */}
-      <Navbar />
-      <Routes>
-        {/* <Route path='/home' exact component={home} />
-        {/* <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-        <Route path='/sign-up' component={SignUp} /> */} */
-      </Routes>
-      <Footer />
-    </Router>
+  <>
+  <Router>
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/request" element={<Request/>} />
+        <Route path="/sign-IN" element={<SignIn/>} />
+        <Route path="/sign-UP" element={<SignUp/>} />
+    </Routes>
+  </Router>
+  </>  
   );
 }
 
