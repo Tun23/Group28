@@ -23,8 +23,10 @@ const Request = () => {
   };
   return (
     <div position="relative" >
-      <TextArea rows={4} placeholder="maxLength is 100" maxLength={100} />
+      Your Request: 
+      <TextArea rows={4} placeholder="" maxLength={100} />
       <Upload {...props}>
+        Add Document:
         <Button icon={<UploadOutlined />}>Click to Upload</Button>
       </Upload>
       <Button type="primary">Submit</Button>

@@ -81,17 +81,6 @@ function Navbar() {
                     </Button>
                   </NavBtnLink>
                 )}
-                {button ? (
-                  <NavBtnLink to='/sign-UP'>
-                    <Button primary>SIGN IN</Button>
-                  </NavBtnLink>
-                ) : (
-                  <NavBtnLink to='/sign-UP'>
-                    <Button onClick={closeMobileMenu} fontBig primary>
-                      SIGN UP
-                    </Button>
-                  </NavBtnLink>
-                )}
               </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
